@@ -1,4 +1,4 @@
-package com.Backend.Backend.Repository;
+package com.Backend.Backend.RepositoryTest;
 
 import com.Backend.Backend.Models.Users;
 import com.Backend.Backend.Repository.UserRepository;

@@ -1,8 +1,10 @@
 package com.Backend.Backend.Repository;
 import com.Backend.Backend.Models.Users;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+@Repository
 public interface UserRepository extends MongoRepository<Users, String> {
 
     // Find user by email
