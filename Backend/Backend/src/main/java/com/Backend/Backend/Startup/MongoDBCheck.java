@@ -9,4 +9,10 @@ public class MongoDBCheck implements StartupCheck{
     public MongoDBCheck(MongoTemplate mongoTemplate) {
         this.mongoTemplate = mongoTemplate;
     }
+    @Override
+    public void run() throws Exception {
+        String dbName = mongoTemplate.getDb().getName();
+        System.out.println("✅ MongoDB connected: " + dbName);
+    }
+
 }
